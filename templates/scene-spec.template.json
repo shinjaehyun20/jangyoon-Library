@@ -1,0 +1,29 @@
+{
+  "id": "scene-01",
+  "titleKr": "장면 제목",
+  "titleEn": "Scene Title",
+  "kr": [
+    "장면용 한국어 본문 1",
+    "장면용 한국어 본문 2"
+  ],
+  "en": [
+    "English helper line 1",
+    "English helper line 2"
+  ],
+  "wordHint": "핵심 단어 힌트",
+  "learningPoints": [
+    "학습 포인트 1",
+    "학습 포인트 2"
+  ],
+  "parentGuide": "부모/교사용 메모",
+  "illustrationPrompt": "ComfyUI용 장면 프롬프트",
+  "visualLabel": "삽화 라벨",
+  "palette": {
+    "skyTop": "#8ed0ff",
+    "skyBottom": "#ffe5b2",
+    "hill": "#7dbd7b",
+    "accent": "#5089c6",
+    "cloud": "#ffffff",
+    "sun": "#ffd469"
+  }
+}

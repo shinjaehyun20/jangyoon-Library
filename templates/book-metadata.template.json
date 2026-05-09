@@ -1,0 +1,20 @@
+{
+  "seriesId": "sunny-tales",
+  "volume": "02",
+  "titleKr": "새 동화책 제목",
+  "titleEn": "New Storybook Title",
+  "summary": "초1 대상 요약 2~3문장",
+  "targetAge": "8세, 초등학교 1학년",
+  "learningTheme": "학습 주제",
+  "publishedAt": "YYYY-MM-DD",
+  "source": {
+    "title": "원전 제목",
+    "author": "저자",
+    "sourceUrl": "https://example.com/public-domain-source",
+    "usageBasis": "공개 도메인 또는 공개 활용 가능 근거"
+  },
+  "editions": [
+    "KR 읽기판",
+    "KR-EN 병기판"
+  ]
+}

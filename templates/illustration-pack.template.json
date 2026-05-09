@@ -1,0 +1,28 @@
+{
+  "seriesStyle": {
+    "tone": "따뜻한 3D 그림책 애니메이션 스타일, 낮은 자극, 아이 혼자 읽어도 이해되는 장면 구도",
+    "aspectRatio": "4:3",
+    "colorRule": "명도 높은 배경, 중채도 포인트 컬러, 과한 네온 사용 금지",
+    "negativePrompt": "harsh shadows, horror, photorealism, cluttered background, text artifacts, logo, watermark"
+  },
+  "characterSheet": {
+    "mainCharacter": "주인공 설명",
+    "supportCharacters": [
+      "조연 설명"
+    ],
+    "expressionRules": [
+      "기쁨, 걱정, 편안함을 크게 읽히게",
+      "눈과 입 모양 단순화"
+    ]
+  },
+  "scenePrompts": [
+    {
+      "sceneId": "scene-01",
+      "seed": 1001,
+      "model": "ComfyUI에 연결된 모델명",
+      "workflowRef": "comfyui/workflows/storybook-series-template.json",
+      "prompt": "장면별 프롬프트",
+      "negativePrompt": "장면별 네거티브 프롬프트"
+    }
+  ]
+}

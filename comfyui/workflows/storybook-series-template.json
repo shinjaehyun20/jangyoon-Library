@@ -1,0 +1,38 @@
+{
+  "workflowName": "storybook-series-template",
+  "version": "0.1.0",
+  "description": "교육형 어린이 동화책 시리즈용 ComfyUI 워크플로 자리표시자",
+  "nodes": [
+    {
+      "id": "checkpoint-loader",
+      "type": "CheckpointLoaderSimple",
+      "note": "시리즈 공통 모델 로더"
+    },
+    {
+      "id": "positive-prompt",
+      "type": "CLIPTextEncode",
+      "note": "장면별 positive prompt"
+    },
+    {
+      "id": "negative-prompt",
+      "type": "CLIPTextEncode",
+      "note": "장면별 negative prompt"
+    },
+    {
+      "id": "sampler",
+      "type": "KSampler",
+      "note": "seed, steps, cfg를 장면 단위로 관리"
+    },
+    {
+      "id": "vae-decode",
+      "type": "VAEDecode",
+      "note": "출력 디코드"
+    },
+    {
+      "id": "save-image",
+      "type": "SaveImage",
+      "note": "권/장면 구조로 저장"
+    }
+  ],
+  "recommendedOutputPattern": "outputs/{volume}/{sceneId}-{seed}.png"
+}

@@ -1,0 +1,24 @@
+{
+  "breakpoints": {
+    "mobile": 640,
+    "tablet": 960,
+    "desktop": 1280
+  },
+  "typography": {
+    "display": "Gaegu",
+    "body": "Nunito or system fallback",
+    "bodyLineHeight": 1.8
+  },
+  "layout": {
+    "mobile": "1열 읽기",
+    "desktop": "중앙 정렬 + 좌측 탐색",
+    "sceneSpacingRule": "장면 간 간격 고정",
+    "textImageBalanceRule": "장면마다 본문과 삽화 비율 유지"
+  },
+  "editionToggle": {
+    "modes": [
+      "KR 읽기판",
+      "KR-EN 병기판"
+    ]
+  }
+}
