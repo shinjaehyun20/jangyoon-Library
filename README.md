@@ -1,6 +1,26 @@
 # Jangyoon Library
 
-교육형 어린이 동화책 시리즈를 위한 GitHub Pages 배포형 워크스페이스입니다.
+> 한 권의 이야기 데이터를 반응형 웹북·한영 읽기판·인쇄용 PDF로 만드는 재사용형 어린이 콘텐츠 파이프라인.
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111)](package.json)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=fff)](package.json)
+[![Content validation](https://img.shields.io/badge/content-validated-2E8B57)](#검증)
+[![Pages](https://img.shields.io/badge/read-GitHub%20Pages-D67D33)](https://shinjaehyun20.github.io/jangyoon-Library/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+[![이야기 데이터에서 웹북과 PDF까지 이어지는 Jangyoon Library](docs/assets/portfolio-hero.svg)](https://shinjaehyun20.github.io/jangyoon-Library/)
+
+**[샘플 웹북 읽기](https://shinjaehyun20.github.io/jangyoon-Library/)** · [콘텐츠 스키마](src/data/books/north-wind-and-the-sun.json) · [다음 권 템플릿](templates/) · [QA 체크리스트](docs/)
+
+| 입력 | 변환 | 결과 |
+| --- | --- | --- |
+| 장면 JSON, 메타데이터, 삽화 | React reader + Vite build | 반응형 웹북 |
+| 한국어·영어 문장 | edition toggle | KR / KR-EN 읽기판 |
+| 동일한 웹 콘텐츠 | Playwright print flow | 인쇄 친화 PDF |
+
+아이 친화형 콘텐츠 생태계에서 **이야기·삽화·학습 메타데이터를 반복 생산 가능한 형태로 묶는 라이브러리 레이어**입니다. 샘플 한 권을 보여주는 데서 끝나지 않고, 다음 권을 만들 수 있는 데이터·템플릿·검증 흐름을 함께 둡니다.
+
+![실제 반응형 웹북 화면](docs/assets/product-preview.png)
 
 ## 배포 주소
 - GitHub Repository: `https://github.com/shinjaehyun20/jangyoon-Library`
@@ -32,6 +52,8 @@ npm run dev
 npm run validate:content
 npm run build
 ```
+
+검증 범위는 책 JSON의 필수 필드·장면/삽화 참조와 Vite production bundle 생성입니다.
 
 ## PDF 출력
 ```bash
@@ -70,3 +92,11 @@ npm run deploy
 - `templates/`: 다음 권 제작용 템플릿
 - `docs/`: 운영 가이드와 QA 체크리스트
 - `outputs/`: PDF 출력물
+
+## 아키텍처
+
+```text
+src/data/books/*.json ─┬─> React reader ─> Vite dist ─> GitHub Pages
+public/illustrations/ ─┘          └──────> print stylesheet ─> PDF
+templates/ + scripts/ ───────────> next-volume authoring + validation
+```
