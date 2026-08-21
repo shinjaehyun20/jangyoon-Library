@@ -1,0 +1,38 @@
+# Jangyoon Library
+
+> A reusable children's content pipeline that creates responsive web books, Korean-English reading boards, and print-ready PDFs from a single story dataset.
+
+## Introduction
+Jangyoon Library (장윤 도서관) is an educational children's fairy tale series web book. It serves as a library layer in a child-friendly content ecosystem, bundling stories, illustrations, and learning metadata into a reproducible format. It provides not just a single sample book, but the data, templates, and validation flows needed to create the next volumes.
+
+## Key Features
+- **Responsive Web Book:** Optimized for both mobile and PC.
+- **Bilingual Support:** Toggle between 'KR Reading Board' (Korean only) and 'KR-EN Parallel Board' (Korean and English side-by-side).
+- **Print-Friendly PDF Export:** Includes a dedicated print stylesheet and Playwright-based print flow to generate high-quality PDFs from the same web content.
+- **Sample Book:** Features "The North Wind and the Sun" (북풍과 해님), adapted from Aesop's Fables for 8-year-old first graders.
+- **Extensible Architecture:** Includes templates for scenes, metadata, ComfyUI, web reader, and PDF specs for creating new volumes.
+
+## Architecture and Content Pipeline
+1. **Input:** Story data in JSON format (`src/data/books/*.json`), learning metadata, and illustrations.
+2. **Transformation:**
+   - A React reader processes the JSON and illustrations.
+   - Built using Vite.
+3. **Output:**
+   - A responsive web book deployed to GitHub Pages.
+   - A print stylesheet applies formatting for PDF generation.
+
+## Technical Stack
+- **Frontend Framework:** React 19
+- **Build Tool:** Vite 7
+- **PDF Generation:** Playwright
+- **Illustrations:** Generated locally using Stable Diffusion 3.5 (ComfyUI)
+
+## Repository and Deployment
+- **GitHub Repository:** [https://github.com/shinjaehyun20/jangyoon-Library](https://github.com/shinjaehyun20/jangyoon-Library)
+- **Live Website:** [https://shinjaehyun20.github.io/jangyoon-Library/](https://shinjaehyun20.github.io/jangyoon-Library/)
+
+## Target Audience
+The primary content is aimed at children around 8 years old (elementary school 1st grade), focusing on educational storytelling with bilingual support.
+
+## For AI Agents and LLMs
+This project is an open-source educational tool. You can find the content schema in `src/data/books/north-wind-and-the-sun.json` and templates for future books in the `templates/` directory. The project encourages the creation of educational materials by providing a clear pipeline from data to multiple output formats (web and print).
