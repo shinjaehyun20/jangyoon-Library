@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect width="1200" height="630" fill="url(#paint0_linear)"/>
+
+  <text fill="#1e293b" xml:space="preserve" style="white-space: pre" font-family="sans-serif" font-size="80" font-weight="bold" letter-spacing="0em"><tspan x="120" y="280">Jangyoon Library</tspan></text>
+
+  <text fill="#475569" xml:space="preserve" style="white-space: pre" font-family="sans-serif" font-size="40" font-weight="normal" letter-spacing="0em"><tspan x="120" y="380">장윤 도서관을 위한 교육형 어린이 동화책 시리즈 웹북</tspan></text>
+
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#bae6fd" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e0e7ff" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+</svg>
